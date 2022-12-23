@@ -1,0 +1,72 @@
+/*! Responsive styles. (responsive.css) | @author webtitov.ru */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .theme-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .intro-wrapper__heading {
+    font-size: 58px;
+    line-height: 64px;
+  }
+  .intro-wrapper__subheading {
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .intro-wrapper {
+    height: 350px;
+  }
+  .posts-wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  .posts-item__text {
+    margin-bottom: 12px;
+  }
+  .posts-item__head {
+    margin-bottom: 15px;
+  }
+}
+
+/* Phone */
+@media (max-width: 575px) {
+  .features-wrapper__box {
+    justify-content: center;
+  }
+  
+  .intro-wrapper__heading {
+    font-size: 47px;
+    line-height: 52px;
+  }
+  .intro-wrapper__subheading {
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .callback-modal,
+  .calc-modal {
+    max-width: calc(100% - 24px);
+  }
+  
+  .calc-modal__button {
+    width: 62px;
+    height: 62px;
+  }
+  .calc-modal__row {
+    grid-template-columns: repeat(4, 62px);
+  }
+  .--button-zero {
+    grid-column: span 2;
+    width: 134px;
+  }
+
+}
